@@ -1,0 +1,346 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <!--
+        A distribution maven project defines the dependencyManagement for cids
+        artifacts used in a concrete deployment. It defines furthermore two types 
+        of submodules:
+        - 1-n deployment artifacts: server and/or client artifacts
+        - 1 autodistribution artifact: generates stsrters (JAR and JNLP) for all deployment artifacts
+        
+        Required Properties:
+        - de.cismet.cidsDistDir (from settings.xml / profile in settings.xml)
+        - de.cismet.cidsCodebase (from current pom or module pom)
+        - de.cismet.cidsAccountExtension (from current pom or module pom)
+    -->
+
+    <parent>
+        <groupId>de.cismet.cids</groupId>
+        <!--
+            Inherit from cids-distribution-parent which defines profiles
+            for building autodistributions
+        -->
+        <artifactId>cids-distribution-parent</artifactId>
+        <version>5.3.2</version>
+    </parent>
+      
+    <!--
+        groupId AND version are inherited to submodules (deployment artifacts)
+    -->
+    <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
+    <artifactId>watergis-distribution</artifactId>
+    <version>5.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>cids-custom Watergis Distribution</name>
+    <description>Generates a cids-custom Wategis Distribution cids distribution</description>
+    
+    <!--
+        *Inherit* all properties from cids-distrubtion-parent to control build
+        plugin execution (unfortunately, build progiles do not work as expected)
+        The plugin execution configuration is optimized for building 
+        *deployment artifact* modules -> no autodistribution steps are executed 
+        by default! Activate them explicitely in the respective autodistribution
+        modules!
+    -->
+    <properties>
+        <!--
+            ATTENTION: Properties specified in settings.xml and/or profiles 
+            (both pom and settings profiles) have preecedence over properties specified 
+            in pom.xml! 
+            
+            -> cidsCodebase or cidsAccountExtension cannot be overwritten in
+            modules if speficied in settings.xml and/or profiles!   
+        -->        
+        
+        <!--
+            Default codebase (usede for starter and classpath JNLPs)
+            Can be overwritten in each module, in nbactions.xml custom builds or from command line 
+            with e.g. -DaccountExtension=Belis2
+        -->
+        <de.cismet.cidsCodebase>http://127.0.0.1/watergisDist</de.cismet.cidsCodebase>
+        
+        <!--
+            Default Account Extension (used for starter, classpath and client directories.
+            Can be overwritten in each module, in nbactions.xml custom builds or from command line 
+            with e.g. -DaccountExtension=Belis2
+        -->
+        <de.cismet.cidsAccountExtension>Watergis</de.cismet.cidsAccountExtension>
+        
+        <!--
+            Custom build timestamp formet for title and description of JNLP files
+        -->
+        <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
+    </properties>
+    
+    <scm>
+        <connection>scm:https://github.com/cismet/cids-distribution-watergis.git</connection>
+        <developerConnection>scm:git:git@github.com:cismet/cids-distribution-watergis.git</developerConnection>
+        <url>https://github.com/cismet/cids-distribution-watergis</url>
+        <tag>HEAD</tag>
+    </scm>
+    
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/cismet/cids-distribution-watergis/issues</url>
+    </issueManagement>
+    
+    <ciManagement>
+        <system>jenkins</system>
+        <url>https://ci.cismet.de/job/cids-distribution-watergis/</url>
+    </ciManagement>
+    
+    <!--
+    <pluginRepositories>
+        <pluginRepository>
+            <id>cismet-repo</id>
+            <name>plugins-releases-local</name>
+            <url>https://repo.cismet.de/plugins-releases-local</url>
+        </pluginRepository>
+    </pluginRepositories>
+    -->
+    
+    <!--
+        Manages (cids) dependencies of deployment of submodules (deployment artifacts)
+        NOTE: Dependency Exclusions, etc. are managed inside the individual submodule
+        to avoild interference with other submodules!  
+    -->
+    <dependencyManagement>
+        <!-- 
+            IMPORTANT: IMPORT cismet-ext-bom for managed external dependencies
+        -->
+        <dependencies>
+            <dependency>
+                <groupId>de.cismet</groupId>
+                <artifactId>cismet-ext-bom</artifactId>
+                <version>5.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!--
+                Managed *cids* dependencies required by all deployment artifact submodules
+                -> deployment artifacts NO NOT specify the version of cids dependencies
+                but may override the scope (e.g. provided)
+            -->    
+        
+            <!-- lower-level-dependencies ================================== -->
+            
+<!--            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server-rest-types</artifactId>
+                <version>5.0</version>
+            </dependency>-->
+            
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismet-commons</artifactId>
+                <version>5.0</version>
+            </dependency> 
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismet-commons</artifactId>
+                <version>5.0</version>
+                <type>test-jar</type>
+            </dependency>
+                         
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismet-gui-commons</artifactId>
+                <version>5.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismet-gui-commons</artifactId>
+                <version>5.0.1</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismap-commons</artifactId>
+                <version>5.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismap-commons</artifactId>
+                <version>5.2.2</version>
+                <type>test-jar</type>
+            </dependency>
+            
+<!--            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cismet-application-commons</artifactId>
+                <version>5.0</version>
+            </dependency>-->
+            
+<!--            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cidsbean-json-patch</artifactId>
+                <version>5.0</version>
+            </dependency>-->
+<!--            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cidsbean-json-patch</artifactId>
+                <version>5.0</version>
+                <type>test-jar</type>
+            </dependency>-->
+            
+            <dependency>
+                <groupId>de.cismet.custom</groupId>
+                <artifactId>cismet-deegree</artifactId>
+                <version>2.3.8</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.custom</groupId>
+                <artifactId>beansbinding</artifactId>
+                <version>5.0</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet</groupId>
+                <artifactId>json-patch</artifactId>
+                <version>5.0</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet</groupId>
+                <artifactId>json-patch</artifactId>
+                <version>5.0</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet</groupId>
+                <artifactId>jcommander</artifactId>
+                <version>5.0</version>
+            </dependency>
+            
+            <!-- core-level dependencies =================================== -->
+            
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server</artifactId>
+                <version>5.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server</artifactId>
+                <version>5.0.3</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server-rest</artifactId>
+                <version>5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server-rest</artifactId>
+                <version>5.0</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server-rest-legacy</artifactId>
+                <version>5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-server-rest-legacy</artifactId>
+                <version>5.0</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.cids.navigator</groupId>
+                <artifactId>cids-navigator</artifactId>
+                <version>5.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cids.navigator</groupId>
+                <artifactId>cids-navigator</artifactId>
+                <version>5.0.2</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.cismap</groupId>
+                <artifactId>cismap-plugin</artifactId>
+                <version>5.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cismap</groupId>
+                <artifactId>cismap-plugin</artifactId>
+                <version>5.0.2</version>
+                <type>test-jar</type>
+            </dependency>
+            
+            <dependency>
+                <groupId>de.cismet.commons</groupId>
+                <artifactId>cids-utils</artifactId>
+                <version>5.0</version>
+            </dependency>
+            
+            <!-- distribution-level dependencies =========================== -->
+                        
+            <dependency>
+                <groupId>de.cismet.watergis</groupId>
+                <artifactId>watergis-server</artifactId>
+                <version>5.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.watergis</groupId>
+                <artifactId>watergis-client</artifactId>
+                <version>5.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
+                <artifactId>cids-custom-wrrl-db-mv</artifactId>
+                <version>5.0.1</version>
+            </dependency>
+          
+            <dependency>
+                <groupId>de.cismet.cids.navigator.plugin</groupId>
+                <artifactId>wf-akuk</artifactId>
+                <version>5.0</version>
+            </dependency> 
+            <dependency>
+                <groupId>net.infonode.docking</groupId>
+                <artifactId>docking</artifactId>
+                <scope>compile</scope>
+                <type>jar</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+        
+    <!--
+        Submodules for Reactor Build
+    -->
+    <modules>
+        <!--
+            These are the *deployment artifacts* needed for the autodistributions. 
+            They are only required if the custom project (e.g. cids-custom-switchon) requires additional 
+            dependencies for deployment, otherwise the custom project could be used directly in
+            the autodistribution module.
+            
+            E.g. cids-server-* when deployed, is started with ServerConsole 
+            from cids-utils. Therefore we have to create a submodule and add this
+            dependency.
+        -->
+        
+        <module>deployment-watergis-server</module>
+        <module>deployment-watergis-navigator</module>
+
+        <!--
+            These modules create autodistributions including the submodules specified 
+            above with help of the cids-maven-plugin.
+        -->
+        
+        <module>distribution-watergis-server</module>
+        
+        <module>distribution-watergis-navigator</module>
+    </modules>
+</project>
