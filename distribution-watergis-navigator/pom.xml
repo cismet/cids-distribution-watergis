@@ -197,8 +197,8 @@
                                 -->
                                 <arguments>
                                     <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
-                                    <!--<argument>-u "https://watergis-callserver-leela.cismet.de/callserver/binary"</argument>-->
-                                    <argument>-u "http://localhost:9986/callserver/binary"</argument>
+                                    <argument>-u "https://watergis-callserver-leela.cismet.de/callserver/binary"</argument>
+                                    <!--<argument>-u "http://localhost:9986/callserver/binary"</argument>-->
                                     <argument>-c "Sirius.navigator.connection.RESTfulConnection"</argument>
                                     <argument>-d "DLM25W"</argument>
                                     <argument>AUTO</argument>
@@ -220,18 +220,12 @@
                                 <localConfiguration>
                                     <jarNames>
                                         <!--
-                                            cids wuppertal custom config
+                                            watergis custom config
                                         -->
                                         <jarName>serverCert.jar</jarName>
-                                        <jarName>i18n.jar</jarName>
-                                        <jarName>cismapPluginImages.jar</jarName>
-                                        <jarName>cismapCommonsImages.jar</jarName>
-                                        <jarName>navigatorImages.jar</jarName>
                                         <jarName>res.jar</jarName>
                                         <jarName>template.jar</jarName>
-                                        <jarName>wfsForms.jar</jarName>
                                         <jarName>jasper-fonts.jar</jarName>
-                                        <jarName>axisClientConfig.jar</jarName>                                        
                                         <jarName>editor.jar</jarName>                                        
                                     </jarNames>
                                 </localConfiguration>
