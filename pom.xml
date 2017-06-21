@@ -58,7 +58,7 @@
             Can be overwritten in each module, in nbactions.xml custom builds or from command line 
             with e.g. -DaccountExtension=Belis2
         -->
-        <de.cismet.cidsCodebase>http://watergis-callserver-leela.cismet.de/watergisDist</de.cismet.cidsCodebase>
+        <de.cismet.cidsCodebase>http://watergis-leela.cismet.de/watergisDist</de.cismet.cidsCodebase>
         
         <!--
             Default Account Extension (used for starter, classpath and client directories.
