@@ -159,12 +159,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>5.2.4</version>
+                <version>5.2.6</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>5.2.4</version>
+                <version>5.2.6</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -342,5 +342,6 @@
         <module>distribution-watergis-server</module>
         
         <module>distribution-watergis-navigator</module>
+        <module>distribution-watergis-navigator-gast</module>
     </modules>
 </project>
