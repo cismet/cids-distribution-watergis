@@ -28,7 +28,7 @@
         <!--
             de.cismet.cidsAccountExtension inherited from parent pom
         -->
-        <de.cismet.cidsAccountExtension>Gast</de.cismet.cidsAccountExtension>
+        <de.cismet.cidsAccountExtension>Watergis</de.cismet.cidsAccountExtension>
     </properties>
 
     <!--
@@ -92,7 +92,7 @@
                         and classpath / starter jars!
                     -->
                     <!--<accountExtension>${de.cismet.cidsAccountExtension}</accountExtension>-->
-                    <accountExtension>Gast</accountExtension>
+                    <accountExtension>Watergis</accountExtension>
                     
                     <!--
                         IMPORTANT: the cidsDistribution directory. All files will be overwritten!
