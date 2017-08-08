@@ -58,7 +58,7 @@
             Can be overwritten in each module, in nbactions.xml custom builds or from command line 
             with e.g. -DaccountExtension=Belis2
         -->
-        <de.cismet.cidsCodebase>http://watergis-leela.cismet.de/watergisDist</de.cismet.cidsCodebase>
+        <de.cismet.cidsCodebase>http://watergis-leela.cismet.de</de.cismet.cidsCodebase>
         
         <!--
             Default Account Extension (used for starter, classpath and client directories.
@@ -343,5 +343,12 @@
         
         <module>distribution-watergis-navigator</module>
         <module>distribution-watergis-navigator-gast</module>
+        <module>distribution-watergis-navigator-15</module>
+        <module>distribution-watergis-navigator-15-gast</module>
+        <module>distribution-watergis-navigator-min</module>
+        <module>distribution-watergis-navigator-min-gast</module>
+        <module>distribution-watergis-navigator-15-log</module>
+        <module>distribution-watergis-navigator-log</module>
+        <module>distribution-watergis-navigator-min-log</module>
     </modules>
 </project>
