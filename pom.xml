@@ -350,5 +350,7 @@
         <module>distribution-watergis-navigator-15-log</module>
         <module>distribution-watergis-navigator-log</module>
         <module>distribution-watergis-navigator-min-log</module>
+        <module>distribution-watergis-d3d-navigator</module>
+        <module>distribution-watergis-gl-navigator</module>
     </modules>
 </project>
