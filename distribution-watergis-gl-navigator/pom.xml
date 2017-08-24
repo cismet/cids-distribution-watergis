@@ -173,7 +173,7 @@
                                     <version>1.7+</version>
                                     <initialHeapSize>512M</initialHeapSize>
                                     <maximalHeapSize>2048M</maximalHeapSize>
-                                    <jvmArgs>-Dsun.java2d.opengl=True</jvmArgs>
+                                    <jvmArgs>-XX:MaxPermSize=128m -Dsun.java2d.opengl=True</jvmArgs>
                                 </java>
                                 
                                 

@@ -16,7 +16,7 @@
         Its sole purpose is to generate / update an autodistribution that is
         based on wunda-navigator deployment module
     -->
-    <artifactId>distribution-watergis-navigator-d3d</artifactId>
+    <artifactId>distribution-watergis-navigator-gast-d3d</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -28,7 +28,7 @@
         <!--
             de.cismet.cidsAccountExtension inherited from parent pom
         -->
-        <!--<de.cismet.cidsAccountExtension>WuNDa</de.cismet.cidsAccountExtension>-->
+        <de.cismet.cidsAccountExtension>Watergis</de.cismet.cidsAccountExtension>
     </properties>
 
     <!--
@@ -91,7 +91,8 @@
                         The global account extension that is used for naming client directories
                         and classpath / starter jars!
                     -->
-                    <accountExtension>${de.cismet.cidsAccountExtension}</accountExtension>
+                    <!--<accountExtension>${de.cismet.cidsAccountExtension}</accountExtension>-->
+                    <accountExtension>Watergis</accountExtension>
                     
                     <!--
                         IMPORTANT: the cidsDistribution directory. All files will be overwritten!
@@ -156,11 +157,11 @@
                                     
                                     NOTE: Alias is *not* used for classpath.jnlp!
                                 -->
-                                <starterAlias>navigator-d3d</starterAlias>
+                                <starterAlias>navigator-gast-d3d</starterAlias>
                                 
                                 <mainClass>de.cismet.watergis.gui.WatergisApp</mainClass>
                                 
-                                <title>Watergis Navigator d3d v${project.version}</title>
+                                <title>Watergis Navigator Gast d3d v${project.version}</title>
                                 <description>Watergis in der Version ${project.version} vom ${maven.build.timestamp}</description>
                                 
                                 <!--
@@ -201,6 +202,7 @@
                                     <!--<argument>-u "http://localhost:9986/callserver/binary"</argument>-->
                                     <argument>-c "Sirius.navigator.connection.RESTfulConnection"</argument>
                                     <argument>-d "DLM25W"</argument>
+                                    <argument>-l "https://watergis-callserver-leela.cismet.de/callserver/binary;anonymous12;DLM25W;anonymous;DLM25W;anonymous"</argument>
                                     <argument>AUTO</argument>
 <!--                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4j.properties</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
@@ -278,5 +280,5 @@
             </plugin>-->
         </plugins>
     </build>
-    <name>distribution-watergis-navigator-d3d</name>
+    <name>distribution-watergis-navigator-gast-d3d</name>
 </project>
