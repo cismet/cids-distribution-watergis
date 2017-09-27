@@ -80,6 +80,11 @@
             <scope>runtime</scope>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>de.cismet.custom</groupId>
+            <artifactId>ycad</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <!--
             APACHE POI Runtime dependencies needed by Jasper
         -->
