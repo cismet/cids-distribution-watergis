@@ -147,24 +147,24 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.1.1</version>
+                <version>6.1.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.1.1</version>
+                <version>6.1.2</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0.1</version>
+                <version>6.0.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0.1</version>
+                <version>6.0.2</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -221,12 +221,12 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.1.1</version>
+                <version>6.2.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.1.1</version>
+                <version>6.2.2</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -289,12 +289,12 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-server</artifactId>
-                <version>6.0.1</version>
+                <version>6.0.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-client</artifactId>
-                <version>6.0.2</version>
+                <version>6.0.3</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
