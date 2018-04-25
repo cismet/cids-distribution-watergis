@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
         <artifactId>watergis-distribution</artifactId>
-        <version>5.1-SNAPSHOT</version>
+        <version>18.04-1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -36,7 +36,6 @@
         <dependency>
             <groupId>de.cismet.watergis</groupId>
             <artifactId>watergis-client</artifactId>
-            <version>5.0.1</version>
         </dependency>
         
         <!--
@@ -64,13 +63,13 @@
         <dependency>
             <groupId>de.cismet</groupId>
             <artifactId>Jump-sld-editor</artifactId>
-            <version>5.0</version>
+            <version>6.0</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>de.cismet.custom</groupId>
             <artifactId>cismet-JUMP</artifactId>
-            <version>1.5.3</version>
+            <version>1.5.6</version>
             <scope>runtime</scope>
             <type>jar</type>
         </dependency>
@@ -80,6 +79,11 @@
             <version>1.0.2</version>
             <scope>runtime</scope>
             <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.custom</groupId>
+            <artifactId>ycad</artifactId>
+            <version>1.0.2</version>
         </dependency>
         <!--
             APACHE POI Runtime dependencies needed by Jasper

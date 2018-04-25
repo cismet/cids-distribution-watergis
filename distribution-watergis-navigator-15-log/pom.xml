@@ -16,7 +16,7 @@
         Its sole purpose is to generate / update an autodistribution that is
         based on wunda-navigator deployment module
     -->
-    <artifactId>distribution-watergis-navigator</artifactId>
+    <artifactId>distribution-watergis-navigator-15-log</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -156,11 +156,11 @@
                                     
                                     NOTE: Alias is *not* used for classpath.jnlp!
                                 -->
-                                <starterAlias>navigator</starterAlias>
+                                <starterAlias>navigator-15-log</starterAlias>
                                 
                                 <mainClass>de.cismet.watergis.gui.WatergisApp</mainClass>
                                 
-                                <title>Watergis Navigator v${project.version}</title>
+                                <title>Watergis Navigator 15 log v${project.version}</title>
                                 <description>Watergis in der Version ${project.version} vom ${maven.build.timestamp}</description>
                                 
                                 <!--
@@ -172,7 +172,7 @@
                                 <java>
                                     <version>1.7+</version>
                                     <initialHeapSize>512M</initialHeapSize>
-                                    <maximalHeapSize>2048M</maximalHeapSize>
+                                    <maximalHeapSize>1500M</maximalHeapSize>
                                     <jvmArgs>-XX:MaxPermSize=128m</jvmArgs>
                                 </java>
                                 
@@ -223,7 +223,7 @@
                                             watergis custom config
                                         -->
                                         <jarName>serverCert.jar</jarName>
-                                        <jarName>res.jar</jarName>
+                                        <jarName>reslog.jar</jarName>
                                         <jarName>template.jar</jarName>
                                         <jarName>jasper-fonts.jar</jarName>
                                         <jarName>editor.jar</jarName>                                        
@@ -278,5 +278,5 @@
             </plugin>-->
         </plugins>
     </build>
-    <name>distribution-watergis-navigator</name>
+    <name>distribution-watergis-navigator-15-log</name>
 </project>

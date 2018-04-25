@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
         <artifactId>watergis-distribution</artifactId>
-        <version>5.1-SNAPSHOT</version>
+        <version>18.04-1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <!--
@@ -37,7 +37,6 @@
         <dependency>
             <groupId>de.cismet.watergis</groupId>
             <artifactId>watergis-server</artifactId>
-            <version>5.0.1</version>
         </dependency>
         <!--
             The Server is started with HeadlessServerConsole, therefore we need this
