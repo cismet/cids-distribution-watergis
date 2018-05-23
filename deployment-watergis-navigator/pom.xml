@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
         <artifactId>watergis-distribution</artifactId>
-        <version>18.05.3</version>
+        <version>18.05.4</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>de.cismet</groupId>
             <artifactId>Jump-sld-editor</artifactId>
-            <version>6.0</version>
+            <version>6.0.1</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
