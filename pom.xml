@@ -289,7 +289,7 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-server</artifactId>
-                <version>6.0.3</version>
+                <version>6.0.5</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
