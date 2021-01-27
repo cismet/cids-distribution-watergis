@@ -135,36 +135,36 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.5.3</version>
+                <version>6.5.7</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.5.3</version>
+                <version>6.5.7</version>
                 <type>test-jar</type>
             </dependency>
                          
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.2.3</version>
+                <version>6.2.7</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.2.3</version>
+                <version>6.2.7</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.5.7</version>
+                <version>6.6.7</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.5.7</version>
+                <version>6.6.7</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -221,12 +221,12 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.3.7</version>
+                <version>6.4.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.3.7</version>
+                <version>6.4.1</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -257,24 +257,24 @@
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.2.21</version>
+                <version>6.4</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.2.21</version>
+                <version>6.4</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.1.7</version>
+                <version>6.1.9</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.1.7</version>
+                <version>6.1.9</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -289,12 +289,12 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-server</artifactId>
-                <version>6.0.12</version>
+                <version>6.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-client</artifactId>
-                <version>6.0.19</version>
+                <version>6.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
