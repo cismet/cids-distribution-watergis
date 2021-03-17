@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
         <artifactId>watergis-distribution</artifactId>
-        <version>21.03.1</version>
+        <version>21.03.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -177,18 +177,12 @@
                                 </java>
                                 
                                 
-                                <!--<properties>-->
-                                    <!--
+                                <properties>
                                     <property>
-                                        <name>jnlp.directory.extension</name>
-                                        <value>${de.cismet.cidsAccountExtension}</value>
+                                        <name>sun.java2d.dpiaware</name>
+                                        <value>false</value>
                                     </property>
-                                    -->
-<!--                                    <property>
-                                        <name>jnlp.intranetUse</name>
-                                        <value>true</value>s
-                                    </property>
-                                </properties>-->
+                                </properties>
                                 
                                 <!--
                                     Arguments must *absolute* (codebase) and must
