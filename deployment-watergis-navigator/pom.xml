@@ -63,7 +63,7 @@
         <dependency>
             <groupId>de.cismet</groupId>
             <artifactId>Jump-sld-editor</artifactId>
-            <version>7.0</version>
+            <version>7.0.1</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
