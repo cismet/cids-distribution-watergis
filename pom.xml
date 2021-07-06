@@ -29,7 +29,7 @@
     -->
     <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
     <artifactId>watergis-distribution</artifactId>
-    <version>7.1-SNAPSHOT</version>
+    <version>21.07.1</version>
     <packaging>pom</packaging>
 
     <name>cids-custom Watergis Distribution</name>
@@ -77,7 +77,7 @@
         <connection>scm:https://github.com/cismet/cids-distribution-watergis.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/cids-distribution-watergis.git</developerConnection>
         <url>https://github.com/cismet/cids-distribution-watergis</url>
-        <tag>HEAD</tag>
+        <tag>v21.07.1</tag>
     </scm>
     
     <issueManagement>
