@@ -135,12 +135,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.4</version>
+                <version>7.2.5</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.4</version>
+                <version>7.2.5</version>
                 <type>test-jar</type>
             </dependency>
                          
@@ -159,12 +159,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.9</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.9</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -221,12 +221,12 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.7.4</version>
+                <version>7.7.6</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.7.4</version>
+                <version>7.7.6</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -245,12 +245,12 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.13</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.13</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -269,12 +269,12 @@
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>7.1.1</version>
+                <version>7.1.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>7.1.1</version>
+                <version>7.1.2</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -289,12 +289,12 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-server</artifactId>
-                <version>7.0.7</version>
+                <version>7.0.8</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-client</artifactId>
-                <version>7.0.10</version>
+                <version>7.0.11</version>
             </dependency>
           
             <dependency>
