@@ -23,12 +23,10 @@
         <!--
             de.cismet.cidsCodebase inherited from parent pom
         -->
-        <!--<de.cismet.cidsCodebase>http://s10221.wuppertal-intra.de/cismet/cidsDistribution/</de.cismet.cidsCodebase>-->
         
         <!--
             de.cismet.cidsAccountExtension inherited from parent pom
         -->
-        <!--<de.cismet.cidsAccountExtension>WuNDa</de.cismet.cidsAccountExtension>-->
     </properties>
 
     <!--
