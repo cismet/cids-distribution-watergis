@@ -372,6 +372,5 @@
         <module>getdown-watergis-navigator-15-ogl</module>
         <module>getdown-watergis-navigator-gast-ogl</module>
         <module>getdown-watergis-navigator-min-ogl</module>
-        <module>distribution-watergis-navigator-getdown</module>
     </modules>
 </project>
