@@ -159,6 +159,30 @@
           <version>20070905</version>
           <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>de.cismet.localWatergis</groupId>
+            <artifactId>jasper-fonts</artifactId>
+            <version>1-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWatergis</groupId>
+            <artifactId>res</artifactId>
+            <version>1-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWatergis</groupId>
+            <artifactId>serverCert</artifactId>
+            <version>1-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWatergis</groupId>
+            <artifactId>template</artifactId>
+            <version>1-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
         <!-- END: Runtime dependencies -->
         
         <!-- BEGIN: TEST dependencies -->
