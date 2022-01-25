@@ -29,7 +29,7 @@
     -->
     <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
     <artifactId>watergis-distribution</artifactId>
-    <version>22.01.2</version>
+    <version>22.01.3</version>
     <packaging>pom</packaging>
 
     <name>cids-custom Watergis Distribution</name>
@@ -77,7 +77,7 @@
         <connection>scm:https://github.com/cismet/cids-distribution-watergis.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/cids-distribution-watergis.git</developerConnection>
         <url>https://github.com/cismet/cids-distribution-watergis</url>
-        <tag>v22.01.2</tag>
+        <tag>v22.01.3</tag>
     </scm>
     
     <issueManagement>
@@ -353,5 +353,24 @@
         <module>distribution-watergis-navigator-15-ogl</module>
         <module>distribution-watergis-navigator-gast-ogl</module>
         <module>distribution-watergis-navigator-min-ogl</module>
+        <module>local-default-watergis</module>
+        <module>local-default-watergis-log</module>
+        <module>getdown-watergis-navigator</module>
+        <module>getdown-watergis-navigator-gast</module>
+        <module>getdown-watergis-navigator-15</module>
+        <module>getdown-watergis-navigator-15-gast</module>
+        <module>getdown-watergis-navigator-min</module>
+        <module>getdown-watergis-navigator-min-gast</module>
+        <module>getdown-watergis-navigator-15-log</module>
+        <module>getdown-watergis-navigator-log</module>
+        <module>getdown-watergis-navigator-min-log</module>
+        <module>getdown-watergis-navigator-d3d</module>
+        <module>getdown-watergis-navigator-ogl</module>
+        <module>getdown-watergis-navigator-15-d3d</module>
+        <module>getdown-watergis-navigator-gast-d3d</module>
+        <module>getdown-watergis-navigator-min-d3d</module>
+        <module>getdown-watergis-navigator-15-ogl</module>
+        <module>getdown-watergis-navigator-gast-ogl</module>
+        <module>getdown-watergis-navigator-min-ogl</module>
     </modules>
 </project>
