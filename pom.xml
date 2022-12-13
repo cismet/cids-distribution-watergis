@@ -58,7 +58,7 @@
             Can be overwritten in each module, in nbactions.xml custom builds or from command line 
             with e.g. -DaccountExtension=Belis2
         -->
-        <de.cismet.cidsCodebase>http://watergis-leela.cismet.de</de.cismet.cidsCodebase>
+        <de.cismet.cidsCodebase>http://watergis-prod-leela.cismet.de</de.cismet.cidsCodebase>
         
         <!--
             Default Account Extension (used for starter, classpath and client directories.
@@ -113,7 +113,7 @@
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>cismet-ext-bom</artifactId>
-                <version>7.1</version>
+                <version>7.2.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -135,36 +135,36 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.6</version>
+                <version>7.3</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.6</version>
+                <version>7.3</version>
                 <type>test-jar</type>
             </dependency>
                          
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>7.2.1</version>
+                <version>7.2.3</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>7.2.1</version>
+                <version>7.2.3</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.12</version>
+                <version>7.0.27</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.12</version>
+                <version>7.0.27</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -189,7 +189,7 @@
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>cismet-deegree2.3</artifactId>
-                <version>7.1</version>
+                <version>7.2</version>
             </dependency>
             
             <dependency>
@@ -221,60 +221,60 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.8.2</version>
+                <version>7.11.3</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.8.2</version>
+                <version>7.11.3</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>7.0.5</version>
+                <version>7.0.6</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>7.0.5</version>
+                <version>7.0.6</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>7.0.13</version>
+                <version>7.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>7.0.13</version>
+                <version>7.1</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.8</version>
+                <version>7.9.6</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.8</version>
+                <version>7.9.6</version>
                 <type>test-jar</type>
             </dependency>
             
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>7.2.1</version>
+                <version>7.3.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>7.2.1</version>
+                <version>7.3.2</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -289,12 +289,12 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-server</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.9</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-client</artifactId>
-                <version>7.0.13</version>
+                <version>7.1</version>
             </dependency>
           
             <dependency>
@@ -353,6 +353,7 @@
         <module>distribution-watergis-navigator-15-ogl</module>
         <module>distribution-watergis-navigator-gast-ogl</module>
         <module>distribution-watergis-navigator-min-ogl</module>
+        <module>clean-apps</module>
         <module>local-default-watergis</module>
         <module>local-default-watergis-log</module>
         <module>getdown-watergis-navigator</module>
