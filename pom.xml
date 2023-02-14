@@ -159,12 +159,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.29</version>
+                <version>7.0.33</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.29</version>
+                <version>7.0.33</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -257,12 +257,12 @@
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.10.1</version>
+                <version>7.10.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.10.1</version>
+                <version>7.10.2</version>
                 <type>test-jar</type>
             </dependency>
             
@@ -294,7 +294,7 @@
             <dependency>
                 <groupId>de.cismet.watergis</groupId>
                 <artifactId>watergis-client</artifactId>
-                <version>7.1</version>
+                <version>7.1.1</version>
             </dependency>
           
             <dependency>
