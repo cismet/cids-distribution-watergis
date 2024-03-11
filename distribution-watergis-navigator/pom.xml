@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.watergis.distribution</groupId>
         <artifactId>watergis-distribution</artifactId>
-        <version>24.03.4</version>
+        <version>24.03.5</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -191,7 +191,7 @@
                                 -->
                                 <arguments>
                                     <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
-                                    <argument>-u "https://watergis-callserver-leela.cismet.de/callserver/binary"</argument>
+                                    <argument>-u "https://watergis-callserver-prod-leela.cismet.de/callserver/binary"</argument>
                                     <!--<argument>-u "http://localhost:9986/callserver/binary"</argument>-->
                                     <argument>-c "Sirius.navigator.connection.RESTfulConnection"</argument>
                                     <argument>-d "DLM25W"</argument>
