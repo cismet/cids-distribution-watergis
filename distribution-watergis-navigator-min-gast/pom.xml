@@ -198,11 +198,11 @@
                                 -->
                                 <arguments>
                                     <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
-                                    <argument>-u "https://watergis-callserver-leela.cismet.de/callserver/binary"</argument>
+                                    <argument>-u "https://watergis-callserver-prod-leela.cismet.de/callserver/binary"</argument>
                                     <!--<argument>-u "http://localhost:9986/callserver/binary"</argument>-->
                                     <argument>-c "Sirius.navigator.connection.RESTfulConnection"</argument>
                                     <argument>-d "DLM25W"</argument>
-                                    <argument>-l "https://watergis-callserver-leela.cismet.de/callserver/binary;anonymous12;DLM25W;anonymous;DLM25W;anonymous"</argument>
+                                    <argument>-l "https://watergis-callserver-prod-leela.cismet.de/callserver/binary;anonymous12;DLM25W;anonymous;DLM25W;anonymous"</argument>
                                     <argument>AUTO</argument>
 <!--                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4j.properties</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>

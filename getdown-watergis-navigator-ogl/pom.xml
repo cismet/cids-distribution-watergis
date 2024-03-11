@@ -83,7 +83,7 @@
                             <verbose>false</verbose>
                             
                             <appargs>
-                                <argument>-u "https://watergis-callserver-leela.cismet.de/callserver/binary"</argument>
+                                <argument>-u "https://watergis-callserver-prod-leela.cismet.de/callserver/binary"</argument>
                                 <argument>-c "Sirius.navigator.connection.RESTfulConnection"</argument>
                                 <argument>-d "DLM25W"</argument>
                                 <argument>AUTO</argument>
