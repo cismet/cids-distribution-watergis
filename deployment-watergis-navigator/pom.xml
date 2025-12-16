@@ -115,10 +115,16 @@
             <artifactId>poi-ooxml</artifactId>
             <version>${apache.poi.version}</version>
             <scope>runtime</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml-lite</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml-schemas</artifactId>
+            <artifactId>poi-ooxml-full</artifactId>
             <version>${apache.poi.version}</version>
             <scope>runtime</scope>
             <exclusions>
