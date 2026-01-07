@@ -89,7 +89,7 @@
                                 <argument>AUTO</argument>
                             </appargs>
                             <jvmargs>
-                                <argument>-XX:MaxHeapSize=2048M</argument>
+                                <argument>-XX:MaxHeapSize=3072M</argument>
                             </jvmargs>
                             <ui>
                                 <name>FIS Gewässer</name>
